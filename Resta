@@ -1,4 +1,4 @@
-package (Nombre)
+package (Nombre del paquete donde este ubicada la clse)
 
 public class resta{
 	private long rnum1, rnum2, rresultado;
