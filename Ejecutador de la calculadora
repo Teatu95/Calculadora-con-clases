@@ -3,14 +3,14 @@ Esto es una calculadora hecha con distintas clases en java, es una practica para
 Hay que decir que hacer una calculadora es ineficiente, las clases estan destinadas a proyectos realmente grandes, o mas grandes al menos, pero 
 creo que puede llegar a servir como primer acercamiento a las clases
 
-package dif_class_para_calculadora_switch;
+package (Nombre del paquete donde este ubicada la clase);
 import java.util.Scanner;
 public class a_calculadora{
 public static void main(String args[]) {
-      Scanner teclado = new Scanner(System.in);
+      Scanner scanner = new Scanner(System.in);
       System.out.println("Bienvenido a Calculadora hecha con clases en java");
       System.out.print("Escriba su nombre de usuario: ");
-      String nombre = teclado.nextLine();
+      String nombre = scanner.nextLine();
       int i=1;
       while (i==1) {
           System.out.println("Ingrese 1 para sumar");
@@ -18,14 +18,14 @@ public static void main(String args[]) {
           System.out.println("Ingrese 3 para multiplicar");
           System.out.println("Ingrese 4 para dividir");
           System.out.print("Ingrese 0 para salir: ");
-          int numing = teclado.nextInt();
+          int numing = scanner.nextInt();
     	  if (numing==0) {
     		  System.exit(0);
     	  }
           System.out.print("Ingrese su primer valor: ");
-          long num1 = teclado.nextLong();
+          long num1 = scanner.nextLong();
           System.out.print("Ingrese su segundo valor: ");
-          long num2 = teclado.nextLong();   	   
+          long num2 = scanner.nextLong();   	   
           switch (numing) {
           	case 1:
           		suma misuma = new suma(num1,num2,nombre);
@@ -49,6 +49,6 @@ public static void main(String args[]) {
           		break;        		
           }    	  	    	      	     	  
       }          
-      teclado.close();
+      scanner.close();
 }
 }
