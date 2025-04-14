@@ -1,6 +1,7 @@
 # Calculadora-con-clases
 Esto es una calculadora hecha con distintas clases en java, es una practica para entender el uso de clases en java(recien estoy iniciando en java)
-
+Hay que decir que hacer una calculadora es ineficiente, las clases estan destinadas a proyectos realmente grandes, o mas grandes al menos, pero 
+creo que puede llegar a servir como primer acercamiento a las clases
 
 package dif_class_para_calculadora_switch;
 import java.util.Scanner;
