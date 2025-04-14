@@ -1,0 +1,19 @@
+package (Nombre del paquete donde este ubicada la clase);
+
+public class multiplicacion{
+	private long mnum1, mnum2, mresultado;
+	private String mnombre;
+public multiplicacion(long num1, long num2, String nombre){
+  this.mnum1 = num1;
+  this.mnum2 = num2;
+  this.mnombre = nombre;
+} 
+public void Operar(){
+ mresultado = mnum1*mnum2;
+}
+public void Imprimir(){
+  Operar();
+  System.out.println(mnombre + ", el resultado de la multiplicacion es: " + mresultado);  
+}  
+
+}
