@@ -1,4 +1,4 @@
-package (Paquete donde este ubicada la clase);
+package (Nombre del paquete donde este ubicada la clase);
 
 public class division{
 	private long dnum1, dnum2, dresultado;
