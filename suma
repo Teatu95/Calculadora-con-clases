@@ -1,0 +1,19 @@
+(En esta clase hacemos la funcion para que sume)
+
+package (Nombre del paquete donde este la clse)
+public class suma{
+	private long snum1, snum2, sresultado;
+	private String snombre;
+public suma(long num1, long num2, String nombre){
+  this.snum1 = num1;
+  this.snum2 = num2;
+  this.snombre = nombre;
+} 
+public void Operar(){
+ sresultado = snum1+snum2;
+}
+public void Imprimir(){
+  Operar();
+  System.out.println(snombre + ", el resultado de la suma es: " + sresultado);  
+}  
+}
