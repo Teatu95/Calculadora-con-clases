@@ -1,0 +1,19 @@
+package (Paquete donde este ubicada la clase);
+
+public class division{
+	private long dnum1, dnum2, dresultado;
+	private String dnombre;
+public division(long num1, long num2, String nombre){
+  this.dnum1 = num1;
+  this.dnum2 = num2;
+  this.dnombre = nombre;
+} 
+public void Operar(){
+ dresultado = dnum1/dnum2;
+}
+public void Imprimir(){
+  Operar();
+  System.out.println(dnombre + ", el resultado de la division es: " + dresultado);  
+}  
+
+}
