@@ -1,2 +1,53 @@
 # Calculadora-con-clases
 Esto es una calculadora hecha con distintas clases en java, es una practica para entender el uso de clases en java(recien estoy iniciando en java)
+
+
+package dif_class_para_calculadora_switch;
+import java.util.Scanner;
+public class a_calculadora{
+public static void main(String args[]) {
+      Scanner teclado = new Scanner(System.in);
+      System.out.println("Bienvenido a Calculadora hecha con clases en java");
+      System.out.print("Escriba su nombre de usuario: ");
+      String nombre = teclado.nextLine();
+      int i=1;
+      while (i==1) {
+          System.out.println("Ingrese 1 para sumar");
+          System.out.println("Ingrese 2 para restar");
+          System.out.println("Ingrese 3 para multiplicar");
+          System.out.println("Ingrese 4 para dividir");
+          System.out.print("Ingrese 0 para salir: ");
+          int numing = teclado.nextInt();
+    	  if (numing==0) {
+    		  System.exit(0);
+    	  }
+          System.out.print("Ingrese su primer valor: ");
+          long num1 = teclado.nextLong();
+          System.out.print("Ingrese su segundo valor: ");
+          long num2 = teclado.nextLong();   	   
+          switch (numing) {
+          	case 1:
+          		suma misuma = new suma(num1,num2,nombre);
+                misuma.Imprimir();
+                System.out.println(" ");
+                break;
+          	case 2:
+          		resta miresta = new resta(num1,num2,nombre);
+                miresta.Imprimir();
+                System.out.println(" ");
+          		break;
+          	case 3:
+          		multiplicacion mimulti = new multiplicacion(num1,num2,nombre);
+                mimulti.Imprimir();
+                System.out.println(" ");
+          		break;
+          	case 4:
+          		division midivi = new division(num1,num2,nombre);
+                midivi.Imprimir();
+                System.out.println(" ");
+          		break;        		
+          }    	  	    	      	     	  
+      }          
+      teclado.close();
+}
+}
