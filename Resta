@@ -1,0 +1,18 @@
+package (Nombre)
+
+public class resta{
+	private long rnum1, rnum2, rresultado;
+	private String rnombre;
+public resta(long num1, long num2, String nombre){
+  this.rnum1 = num1;
+  this.rnum2 = num2;
+  this.rnombre = nombre;
+} 
+public void Operar(){
+ rresultado = rnum1-rnum2;
+}
+public void Imprimir(){
+  Operar();
+  System.out.println(rnombre + ", el resultado de la resta es: " + rresultado);  
+}  
+}
